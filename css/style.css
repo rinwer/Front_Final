@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #e6e6e6;
+}
+
+header,
+footer {
+  background: #1f45fc;
+  width: 90%;
+  margin: 20px auto;
+}
+
+header nav {
+  background: #fff;
+  overflow: hidden;
+}
+
+header nav ul {
+  list-style-type: none; /*Quitamos los puntos y sangrías*/
+}
+
+header nav ul li {
+  float: left;
+  padding: 10;
+}
+
+header nav ul li a {
+  display: block; /*Con esto el margin funciona para todos los lados*/
+  font-size: 20px;
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  background: #f8f6f0;
+}
+
+.contenedor {
+  background: white;
+  width: 90%;
+  margin: 20px auto;
+  height: 300px;
+}
+
+.contenedor #main {
+  width: 69.1%;
+  height: 100%;
+  margin-right: 0.9%;
+  padding: 20px;
+  float: left;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+.contenedor aside {
+  width: 30%;
+  float: left;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+footer {
+  background: #1f45fc;
+  color: white;
+  text-align: center;
+  clear: both;
+  padding: 10px 0px;
+}
+
+/*FORM INGRESO INICIO*/
+
+aside h2 {
+  text-align: center;
+  margin-bottom: 5px;
+}
+form label {
+  display: block;
+  width: 100%;
+}
+
+form textarea {
+  resize: vertical;
+  max-height: 300px;
+  min-height: 100px;
+}
+
+form input {
+  display: block;
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  border: 1px solid gray;
+}
+
+form input:focus,
+textarea:focus {
+  border: 1px solid white;
+}
+
+form input[type="submit"] {
+  margin-bottom: 0;
+  background: #f8f6f0;
+  border: none;
+  box-shadow: 3px 3px 2px #c0c0c0;
+}
+form input[type="submit"]:hover {
+  background: #b6b6b4;
+  cursor: pointer;
+}
+
+/********************************/
+/*Estilos para tabla*/
+/********************************/
+
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-size: 10px;
+}
+
+table tr:nth-child(1) {
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  background-color: #000;
+  text-transform: uppercase;
+}
+
+table td {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+table tr:hover {
+  background: #c6e9fe;
+}
+
+table td:hover {
+  background: #dbdbdb;
+  color: black;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/IngresarLibro.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <div class="div_main">
+      <div class="logo">
+        <img src="imagenes/misionTic.png" width="120" alt="Logotipo">
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="inicio.html">Inicio</a></li>
+        <li><a href="consultas.html">Consultas</a></li>
+        <li><a href="ingresarLibro.html">Ingresar Libro</a></li>
+        <li><a href="#Cuenta">Cuenta</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="contenedor">
+    <section id="main">
+      <article id="contenido">
+        <form name="registro" method="POST">
+          <label for="cod_autor">Id Autor:</label>
+          <input type="number" id="cod_autor" placeholder="ID Autor" required>
+          <label for="des_autor">Autor:</label>
+          <input type="text" id="des_autor" placeholder="Autor" required>
+          <label for="cod_editorial">ID Editorial:</label>
+          <input type="number" id="cod_editorial" placeholder="ID Editorial" required>
+          <label for="des_editorial">Editorial:</label>
+          <input type="text" id="des_editorial" placeholder="Editorial" required>
+          <label for="cod_libro">ID Libro:</label>
+          <input type="number" id="cod_libro" placeholder="ID Libro" required>
+          <label for="tit_libro">Titulo Libro:</label>
+          <input type="text" id="tit_libro" placeholder="Titulo Libro" required>
+          <label for="anio">Año:</label>
+          <input type="number" id="anio" placeholder="Año" required>
+          <label for="tema">Tema del Libro:</label>
+          <input type="text" id="tema" placeholder="Tema del Libro" required>
+          <label for="cant_plu">Cantidad Plu:</label>
+          <input type="number" id="cant_plu" placeholder="Total Ejemplares disponibles" required>
+          <label for="cant_disponible">Cantidad Dispobible Libros:</label>
+          <input type="number" id="cant_disponible" placeholder="Ejemplares disponibles" required>
+          <label for="plu">Plu:</label>
+          <input type="number" id="plu" placeholder="Plu" required>
+          <label for="cant_disponible_plu">Cantidad Dispobible Plu:</label>
+          <input type="number" id="cant_disponible_plu" placeholder="Cantidad Dispobible Plu" required>
+          <input type="submit" value="Submit">
+        </form>
+      </article>
+    </section>
+    <aside>
+      <div id="asideImg">
+        <img src="imagenes/IngrearLibro.jpg" width="120" alt="Logotipo">
+      </div>
+    </aside>
+  </section>
+  <footer>
+    <p>Mintic 2022 <br> <span>GRUPO 4</span></p>
+  </footer>
+</body>
+<script src="js/ingresarLibro.js"></script>
+
+</html>
