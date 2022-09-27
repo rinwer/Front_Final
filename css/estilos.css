@@ -1,31 +1,80 @@
-* {
+{
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
+h1 {
+  color: white;
+  text-align: center;
+}
+h2 {
+  color: black;
+  text-align: center;
+}
+h3 {
+  margin: 20px auto;
+  color: black;
+  text-align: justify;
+}
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+
+}
 body {
   background: #e6e6e6;
+  width: 100% auto;
 }
 
-header,
+header{
+  background: #1f45fc;
+  width: 100% auto;
+  margin: 20px auto;
+}
+.logo{
+  background: #1f45fc;
+  padding: 16px;
+  width: 20%;
+  float: left;
+}
+
+.nombre_pagina{
+  background: #1f45fc;
+  color: #f8f6f0;
+  padding: 50px;
+  width: 80%;
+  float: right;
+}
+
 footer {
   background: #1f45fc;
-  width: 90%;
+  width: 100%;
   margin: 20px auto;
 }
 
 header nav {
+  clear: both;
   background: #fff;
+  width: 100% auto;
   overflow: hidden;
+  float: left;
+  margin-left: 20px auto;
 }
 
 header nav ul {
   list-style-type: none; /*Quitamos los puntos y sangrías*/
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
+
 
 header nav ul li {
   float: left;
   padding: 10;
+  width: 100% auto;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 header nav ul li a {
@@ -33,21 +82,26 @@ header nav ul li a {
   font-size: 20px;
   color: black;
   padding: 10px 20px;
+  width: 100% auto;
   text-decoration: none;
 }
 
 header nav ul li a:hover {
   background: #f8f6f0;
+  width: 100% auto;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .contenedor {
   background: white;
-  width: 90%;
+  width: 100%;
   margin: 20px auto;
   height: 300px;
+  clear: both;
 }
 
 .contenedor #main {
+  background-image: url("Imagenes/DALL·E 2022-09-13 22.12.50 - imágenes de libros oleo.png");
   width: 69.1%;
   height: 100%;
   margin-right: 0.9%;
@@ -55,6 +109,7 @@ header nav ul li a:hover {
   float: left;
   box-sizing: border-box;
   overflow: auto;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .contenedor aside {
@@ -62,11 +117,13 @@ header nav ul li a:hover {
   float: left;
   padding: 20px;
   box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 footer {
   background: #1f45fc;
   color: white;
+  width: 100% auto;
   text-align: center;
   clear: both;
   padding: 10px 0px;
@@ -77,6 +134,7 @@ footer {
 aside h2 {
   text-align: center;
   margin-bottom: 5px;
+  
 }
 form label {
   display: block;

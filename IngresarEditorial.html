@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/IngresarLibro.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="div_main">
+            <div class="logo">
+            <img src="imagenes/misionTic.png" width="120" alt="Logotipo">
+            </div>
+        </div>
+
+        <nav>
+            <ul>
+            <li><a href="inicio.html" class="dropbtn">Inicio</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Consultas</a>
+                <div class="dropdown-content">
+                    <a href="consultas_autores.html">Autores</a>
+                    <a href="consultas_editoriales.html">Editoriales</a>
+                    <a href="consultas.html">Libros</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Catalogos</a>
+                <div class="dropdown-content">
+                <a href="IngresarAutor.html">Ingresar Autor</a>
+                <a href="IngresarEditorial.html">Ingresar Editorial</a>
+                <a href="ingresarLibro.html">Ingresar Libro</a>
+                <a href="ingresarLibroPlu.html">Ingresar Plu Libro</a>
+            </div>
+                </li>
+                <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Cuenta</a>
+                <div class="dropdown-content">
+                    <a href="ConsultarLogin.html">Ingresar Login</a>
+                    <a href="acercade.html">A Cerca de</a>
+                </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contenedor">
+        <section id="main">
+            <article id="contenido">
+                <form name="registro" method="POST">
+
+                    <table width="100%">
+                        <caption>INGRESAR EDITORIAL</caption>
+                        <tbody>
+                            <tr>
+                                <td><label for="cod_editorial">ID Editorial:</label></td>
+                                <td>
+                                    <input type="number" id="cod_editorial" placeholder="ID Editorial" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="des_editorial">Editorial:</label></td>
+                                <td>
+                                    <input type="text" id="des_editorial" placeholder="Editorial" onkeyup="javascript:this.value=this.value.toUpperCase();" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" aling="center">
+                                    <input type="submit" value="Submit">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </article>
+        </section>
+
+        <aside>
+            <div id="asideImg">
+                <img src="imagenes/IngrearEditorial.jpg" width="120" alt="Logotipo">
+            </div>
+        </aside>
+    </section>
+
+    <footer>
+        <p>Mintic 2022 <br> <span>GRUPO 4</span></p>
+    </footer>
+</body>
+<script src="js/ingresarEditorial.js"></script>
+
+</html>
