@@ -36,16 +36,16 @@ header{
 }
 .logo{
   background: #1f45fc;
-  padding: 16px;
-  width: 20%;
+  padding: 18px;
+  width: 22.4%;
   float: left;
 }
 
 .nombre_pagina{
   background: #1f45fc;
   color: #f8f6f0;
-  padding: 50px;
-  width: 80%;
+  padding: 30px;
+  width: 70.5%;
   float: right;
 }
 
