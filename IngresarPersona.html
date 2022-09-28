@@ -75,64 +75,84 @@
         <form name="registro" method="POST">
 
           <table width="100%">
-            <CAPTION>INGRESAR LIBRO</CAPTION>
+            <CAPTION>INGRESAR PERSONA</CAPTION>
             <tbody>
               <tr>
-                <td width="10%"><label for="cod_autor">Id Autor:</label></td>
+                <td width="10%"><label for="cod_persona">Cod Persona:</label></td>
                 <td>
-                  <input type="number" id="cod_autor" placeholder="ID Autor" onkeyup="javascript:this.value=this.value.toUpperCase();" required>
+                  <input type="number" id="cod_persona" placeholder="CODIGO" onkeyup="javascript:this.value=this.value.toUpperCase();" required>
                 </td>
               </tr>
 
               <tr>
-                <td><label for="cod_editorial">ID Editorial:</label></td>
+                <td><label for="tipo_documento">Tipo Documento:</label></td>
                 <td>
-                  <input type="number" id="cod_editorial" placeholder="ID Editorial" required>
+                  <input type="text" id="tipo_documento" placeholder="CC/TI/CE/PAS" required>
                 </td>
               </tr>
 
               <tr>
-                <td><label for="cod_libro">ID Libro:</label></td>
+                <td><label for="num_documento">Numero Documento:</label></td>
                 <td>
-                  <input type="number" id="cod_libro" placeholder="ID Libro" required>
+                  <input type="number" id="num_documento" placeholder="NUMERO" required>
                 </td>
               </tr>
 
               <tr>
-                <td><label for="tit_libro">Titulo Libro:</label></td>
+                <td><label for="nombres">Nombres:</label></td>
                 <td>
-                  <input type="text" id="tit_libro" placeholder="Titulo Libro" onkeyup="javascript:this.value=this.value.toUpperCase();" required>
+                  <input type="text" id="nombres" placeholder="NOMBRES" onkeyup="javascript:this.value=this.value.toUpperCase();" required>
                 </td>
               </tr>
               <tr>
-                <td><label for="anio">Año:</label></td>
+                <td><label for="apellidos">Apellidos:</label></td>
                 <td>
-                  <input type="number" id="anio" placeholder="Año" min="-9999" max="9999" required>
+                  <input type="text" id="apellidos" placeholder="APELLIDOS" onkeyup="javascript:this.value=this.value.toUpperCase();" required>
                 </td>
               </tr>
               <tr>
-                <td><label for="tema">Tema del Libro:</label></td>
+                <td><label for="direccion">Direccion:</label></td>
                 <td>
-                  <input type="text" id="tema" placeholder="Tema del Libro" onkeyup="javascript:this.value=this.value.toUpperCase();" required>
-                </td>
-              </tr>
-              <tr>
-                <td><label for="cant_plu">Cantidad Plu:</label></td>
-                <td>
-                  <input type="number" id="cant_plu" placeholder="Total Ejemplares disponibles" min="0" max="99" required>
-                </td>
-              </tr>
-              <tr>
-                <td><label for="cant_disponible">Cant Dispobible:</label></td>
-                <td>
-                  <input type="number" id="cant_disponible" placeholder="Ejemplares disponibles" min="0" max="99" required>
+                  <input type="text" id="direccion" placeholder="DIRECCION" onkeyup="javascript:this.value=this.value.toUpperCase();" required>
                 </td>
               </tr>
 
               <tr>
-                <td><label for="cant_disponible_plu">Plu Dispobible:</label></td>
+                <td><label for="tel_movil">Celular:</label></td>
                 <td>
-                  <input type="number" id="cant_disponible_plu" value="1" placeholder="Plu Dispobible" inputmode="numeric" min="0" max="1" readonly>
+                  <input type="number" id="tel_movil" placeholder="CELULAR" min="1000000000" max="9999999999" required>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="des_municipio">Municipio:</label></td>
+                <td>
+                  <input type="text" id="des_municipio" placeholder="NOMBRE MUNICIPIO" onkeyup="javascript:this.value=this.value.toUpperCase();" required>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="email">Email:</label></td>
+                <td>
+                  <input type="email" id="email" placeholder="EMAIL" required>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="fec_nacimiento">Fecha Nacimiento:</label></td>
+                <td>
+                  <input type="text" id="fec_nacimiento" placeholder="DD/MM/AAAA" required>
+                </td>
+              </tr>
+
+              <tr>
+                <td><label for="fec_ingreso">Fecha Ingreso:</label></td>
+                <td>
+                  <input type="text" id="fec_ingreso" value="1" placeholder="DD/MM/AAAA">
+                </td>
+              </tr>
+
+              <tr>
+                <td><label for="cod_cargo_id">Cod Cargo:</label></td>
+                <td>
+                  <input type="text" id="cod_cargo_id" value="2" placeholder="CODIGO CARGO">
                 </td>
               </tr>
 
@@ -149,7 +169,7 @@
 
     <aside>
       <div id="asideImg">
-        <img src="imagenes/IngresarLibro.png" width="120" alt="Logotipo">
+        <img src="imagenes/IngresarPersona.png" width="120" alt="Logotipo">
       </div>
     </aside>
     
@@ -158,6 +178,6 @@
     <p>Mintic 2022 <br> <span>GRUPO 4</span></p>
   </footer>
 </body>
-<script src="js/ingresarLibro.js"></script>
+<script src="js/ingresarPersona.js"></script>
 
 </html>

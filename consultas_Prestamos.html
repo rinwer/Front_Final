@@ -13,10 +13,11 @@
   <header>
     <div class="div_main">
       <div class="logo">
-        <img src="imagenes/misionTic.png" width="120" alt="Logotipo">
+        <img src="Imagenes/DALL·E 2022-09-13 22.12.05 - imágenes de libros en pixeles.png" width="120" height="100" alt="Logotipo">
       </div>
+      <div class="nombre_pagina"> <h1>Biblioteca</h1></div>
     </div>
-    
+
     <nav>
       <ul>
           <li><a href="inicio.html" class="dropbtn">Inicio</a></li>
@@ -67,36 +68,29 @@
       </ul>
   </nav>
 
-   </header>
+
+  </header>
 
   <section class="contenedor">
     <section id="main">
       <article id="contenido">
-        <h2>BIBLIOTECA</h2>
-        <form action="">
-            <br>Términos y condiciones de la Biblioteca.
-            <br>Cancelar con anticipación las reservas en sala para que otros tengan oportunidad.
-            <br>Entregar oportunamente los libros prestados.
-            <br>Mantener actualizados los datos en "CUENTA".
-            <br>
-            <br>
-            <br>Autores
-            <br>RINSON RIVERA GONZÁLEZ
-            <br>RICHARD JAVIER CHIA JIMÉNEZ
-            <br>REYNALDO JOSÉ CAMACHO 
-            <br>SANDRA PAULINA QUINTERO
-            <br>SANDRA CECILIA FLÓREZ
-            <br>
-            <br>
-            <br>Mision TIC 2022
-            <br>Version Sprint 3
-          </form>
-          <p></p>
+        <h2>Área de información</h2>
       </article>
     </section>
+    <aside>
+      <h2>Busqueda</h2><br><br>
+      <form name="formConsulta">
+        <label for="plu">PLU:</label><br>
+        <input type="number" id="plu">
+        <input id="bottomBuscarPrestamo" type="button" value="Buscar">
+      </form>
+    </aside>
   </section>
+
   <footer>
-    <p>Mintic 2022<br> <span>GRUPO 4</span></p>
+    <p>Mintic 2022 <br> <span>GRUPO 4</span></p>
   </footer>
+  <script src="js/consultarPrestamo.js"></script>
 </body>
+
 </html>

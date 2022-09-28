@@ -16,7 +16,7 @@
         <img src="imagenes/misionTic.png" width="120" alt="Logotipo">
       </div>
     </div>
-    
+
     <nav>
       <ul>
           <li><a href="inicio.html" class="dropbtn">Inicio</a></li>
@@ -67,36 +67,72 @@
       </ul>
   </nav>
 
-   </header>
+  </header>
 
   <section class="contenedor">
     <section id="main">
       <article id="contenido">
-        <h2>BIBLIOTECA</h2>
-        <form action="">
-            <br>Términos y condiciones de la Biblioteca.
-            <br>Cancelar con anticipación las reservas en sala para que otros tengan oportunidad.
-            <br>Entregar oportunamente los libros prestados.
-            <br>Mantener actualizados los datos en "CUENTA".
-            <br>
-            <br>
-            <br>Autores
-            <br>RINSON RIVERA GONZÁLEZ
-            <br>RICHARD JAVIER CHIA JIMÉNEZ
-            <br>REYNALDO JOSÉ CAMACHO 
-            <br>SANDRA PAULINA QUINTERO
-            <br>SANDRA CECILIA FLÓREZ
-            <br>
-            <br>
-            <br>Mision TIC 2022
-            <br>Version Sprint 3
-          </form>
-          <p></p>
+        <form name="registro" method="POST">
+
+          <table width="100%">
+            <CAPTION>INGRESAR PRESTAMO</CAPTION>
+            <tbody>
+              <tr>
+                <td width="10%"><label for="cod_presetamo">COD PRESTAMO:</label></td>
+                <td>
+                  <input type="number" id="cod_prestamo" placeholder="CODIGO" required>
+                </td>
+              </tr>
+
+              <tr>
+                <td><label for="cod_persona">COD PERSONA:</label></td>
+                <td>
+                  <input type="number" id="cod_persona" placeholder="CODIGO PERSONA" required>
+                </td>
+              </tr>
+
+              <tr>
+                <td><label for="plu">PLU Libro:</label></td>
+                <td>
+                  <input type="number" id="plu" placeholder="770..." required>
+                </td>
+              </tr>
+
+              <tr>
+                <td><label for="fec_prestamo">Fecha Prestamo:</label></td>
+                <td>
+                  <input type="text" id="fec_prestamo" placeholder="DD/MM/AAAA" onkeyup="javascript:this.value=this.value.toUpperCase();" required>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="fec_entrega">Fecha Entrega:</label></td>
+                <td>
+                  <input type="text" id="fec_entrega" required>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="2" aling="center">
+                  <input type="submit" value="Submit">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
       </article>
     </section>
+
+    <aside>
+      <div id="asideImg">
+        <img src="imagenes/IngresarLibro.png" width="120" alt="Logotipo">
+      </div>
+    </aside>
+    
   </section>
   <footer>
-    <p>Mintic 2022<br> <span>GRUPO 4</span></p>
+    <p>Mintic 2022 <br> <span>GRUPO 4</span></p>
   </footer>
 </body>
+<script src="js/ingresarLibro.js"></script>
+
 </html>
