@@ -11,14 +11,13 @@ bottom.addEventListener("click", hizoClick);
 autores = [];
 let bottomBuscar = document.getElementById("bottomBuscarAutor");
 
-const getlibrosUrl =
-  "https://minticgrupo4.herokuapp.com/libros/consultar_autores";
+const getAutorUrl = "http://127.0.0.1:8000/libros/consultarLibro";
 
 function clickBuscarAutor() {
   getAutores();
 }
 function getAutores() {
-  fetch(getlibrosUrl)
+  fetch(getAutorUrl)
     .then((response) => {
       console.log(response.status);
       if (response.ok) {
