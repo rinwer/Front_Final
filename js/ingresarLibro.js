@@ -8,39 +8,38 @@ let text = document.getElementById("modificarText");
 bottom.addEventListener("click", hizoClick);
 */
 
-const crearlibroUrl =
-  "https://minticgrupo4.herokuapp.com/libros/agregarLibroCompleto";
-//const crearlibroUrl = 'http://127.0.0.1:8000//libros/agregarLibroCompleto';
+//const crearlibroUrl = "https://minticgrupo4.herokuapp.com/libros/agregarLibro";
+const crearlibroUrl = "http://127.0.0.1:8000//libros/agregarLibro";
 
 function agruparData(event_) {
   event_.preventDefault(); //para evitar que el evento formulario se ejecute como es.
   const cod_autor = document.registro.cod_autor.value;
-  const des_autor = document.registro.des_autor.value;
+  //const des_autor = document.registro.des_autor.value;
   const cod_editorial = document.registro.cod_editorial.value;
-  const des_editorial = document.registro.des_editorial.value;
+  //const des_editorial = document.registro.des_editorial.value;
   const cod_libro = document.registro.cod_libro.value;
   const tit_libro = document.registro.tit_libro.value;
   const anio = document.registro.anio.value;
   const tema = document.registro.tema.value;
   const cant_plu = document.registro.cant_plu.value;
   const cant_disponible = document.registro.cant_disponible.value;
-  const plu = document.registro.plu.value;
-  const cant_disponible_plu = document.registro.cant_disponible_plu.value;
+  //const plu = document.registro.plu.value;
+  //const cant_disponible_plu = document.registro.cant_disponible_plu.value;
 
   //Objeto js
   const data = {
     cod_autor: cod_autor,
-    des_autor: des_autor,
+    //des_autor: des_autor,
     cod_editorial: cod_editorial,
-    des_editorial: des_editorial,
+    //des_editorial: des_editorial,
     cod_libro: cod_libro,
     tit_libro: tit_libro,
     anio: anio,
     tema: tema,
     cant_plu: cant_plu,
     cant_disponible: cant_disponible,
-    plu: plu,
-    cant_disponible_plu: cant_disponible_plu,
+    //plu: plu,
+    //cant_disponible_plu: cant_disponible_plu,
   };
 
   //convertir objeto js a json
