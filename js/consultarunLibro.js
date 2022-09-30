@@ -12,7 +12,7 @@ libro = [];
 let bottomBuscar = document.getElementById("bottomBuscarLibro");
 
 //const getlibroUrl = "https://minticgrupo4.herokuapp.com/libros/consultarLibro/";
-//const getlibroUrl = "http://127.0.0.1:8000//libros/consultarLibro/";
+//const getlibrosUrl = "https://minticgrupo4.herokuapp.com/libros/consultarLibro/";
 let getlibroUrl;
 let getlibrosUrl;
 
@@ -29,14 +29,15 @@ function clickBuscarLibro() {
 }
 
 function getlibro() {
-  const url = new URL(window.location.href);
-  const id = url.searchParams.get("cod_libro");
+  //Capturar la url y
+  //const url = new URL(window.location.href);
+  //const id = url.searchParams.get("cod_libro");
   const idLibro = document.formCOnsulta.nombreLibro.value;
 
   fetch(getlibroUrl + idLibro)
     .then((response) => {
-      console.log(response.status);
-      if (response.ok) {
+      console.log(response.ok);
+      if (response.ok || response.status == 400) {
         return response.text();
       } else {
         throw new Error(response.status);
@@ -44,12 +45,15 @@ function getlibro() {
     })
     //recibimos un json en data
     .then((data) => {
+      if (data.includes("No existe libro")) {
+        funcionError(data);
+      }
       //convertir objeto del back en objecto json.
       libro = JSON.parse(data);
       procesarLibro(libro);
     })
     .catch((err) => {
-      console.error("ERROR: ", err.message);
+      console.log("Catch: " + err.message);
     });
 }
 
@@ -88,7 +92,6 @@ function procesarLibro(dataLibro) {
 }
 
 function getlibros() {
-  console.log("ingreando a libros");
   fetch(getlibrosUrl)
     .then((response) => {
       console.log(response.status);
@@ -104,7 +107,7 @@ function getlibros() {
       procesarLibros();
     })
     .catch((err) => {
-      console.error("ERROR: ", err.message);
+      console.error("ERROR: ", err);
     });
 }
 
@@ -135,6 +138,14 @@ function procesarLibros() {
   }
   const info = document.getElementById("main");
   info.appendChild(tabla);
+}
+
+function funcionError(err) {
+  if (err) {
+    document.getElementById("main").innerHTML = `
+    <h2>${err}</h2>
+    `;
+  }
 }
 
 bottomBuscar.addEventListener("click", clickBuscarLibro);
