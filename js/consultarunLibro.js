@@ -8,33 +8,23 @@ let text = document.getElementById("modificarText");
 bottom.addEventListener("click", hizoClick);
 */
 
-libro = [];
+libros = [];
 let bottomBuscar = document.getElementById("bottomBuscarLibro");
 
-//const getlibroUrl = "https://minticgrupo4.herokuapp.com/libros/consultarLibro/";
-//const getlibrosUrl = "https://minticgrupo4.herokuapp.com/libros/consultarLibro/";
-let getlibroUrl;
-let getlibrosUrl;
+//const getlibroUrl = "https://minticgrupo4.herokuapp.com/libros/consultarLibroNombre/";
+let getlibroUrl = "http://127.0.0.1:8000/libros/consultarLibroNombre/";
 
 function clickBuscarLibro() {
-  const id = document.formCOnsulta.nombreLibro.value;
-  console.log(id);
-  if (id > 0) {
-    getlibroUrl = "http://127.0.0.1:8000/libros/consultarLibro/";
-    getlibro();
-  } else {
-    getlibrosUrl = "http://127.0.0.1:8000/libros/consultarLibros";
-    getlibros();
-  }
+  getlibro();
 }
 
 function getlibro() {
-  //Capturar la url y
+  //Capturar la url
   //const url = new URL(window.location.href);
   //const id = url.searchParams.get("cod_libro");
-  const idLibro = document.formCOnsulta.nombreLibro.value;
+  const titLibro = document.formCOnsulta.nombreLibro.value;
 
-  fetch(getlibroUrl + idLibro)
+  fetch(getlibroUrl + titLibro)
     .then((response) => {
       console.log(response.ok);
       if (response.ok || response.status == 400) {
@@ -49,69 +39,16 @@ function getlibro() {
         funcionError(data);
       }
       //convertir objeto del back en objecto json.
-      libro = JSON.parse(data);
-      procesarLibro(libro);
+      libros = JSON.parse(data);
+      console.log("Llamando a procesar");
+      procesarLibros();
     })
     .catch((err) => {
       console.log("Catch: " + err.message);
     });
 }
-
-function procesarLibro(dataLibro) {
-  //cargar vació al contenedor.
-  document.getElementById("main").innerHTML = "";
-  const tabla = document.createElement("table");
-  const hileraHeader = document.createElement("tr");
-  const hilera = document.createElement("tr");
-
-  //Para varios libros.
-  if (dataLibro.length > 0) {
-    //para un solo libro.
-  } else {
-    for (let k in dataLibro) {
-      const celdaHeder = document.createElement("td");
-      const textoHeaders = document.createTextNode(k);
-      celdaHeder.appendChild(textoHeaders);
-      hileraHeader.appendChild(celdaHeder);
-    }
-    tabla.appendChild(hileraHeader);
-
-    for (let k in dataLibro) {
-      const celda = document.createElement("td");
-      const textoCelda = document.createTextNode(dataLibro[k]);
-      celda.appendChild(textoCelda);
-      hilera.appendChild(celda);
-    }
-    tabla.appendChild(hilera);
-  }
-  if (document.getElementById("contenido") != null) {
-    document.getElementById("contenido").remove();
-  }
-  const info = document.getElementById("main");
-  info.appendChild(tabla);
-}
-
-function getlibros() {
-  fetch(getlibrosUrl)
-    .then((response) => {
-      console.log(response.status);
-      if (response.ok) {
-        return response.text();
-      } else {
-        throw new Error(response.status);
-      }
-    })
-    .then((data) => {
-      //convertir objeto del back en objecto json.
-      libros = JSON.parse(data);
-      procesarLibros();
-    })
-    .catch((err) => {
-      console.error("ERROR: ", err);
-    });
-}
-
 function procesarLibros() {
+  console.log(libros);
   document.getElementById("main").innerHTML = "";
   const tabla = document.createElement("table");
   const hileraHeader = document.createElement("tr");
@@ -135,6 +72,11 @@ function procesarLibros() {
   }
   if (document.getElementById("contenido") != null) {
     document.getElementById("contenido").remove();
+  }
+  if (libros.length == 0) {
+    document.getElementById("main").innerHTML = `
+    <h2>No existe coincidencia. Intente buscar de nuevo</h2>
+    `;
   }
   const info = document.getElementById("main");
   info.appendChild(tabla);
