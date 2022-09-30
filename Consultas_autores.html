@@ -15,70 +15,72 @@
       <div class="logo">
         <img src="imagenes/DALL·E 2022-09-13 22.12.05 - imágenes de libros en pixeles.png" width="120" alt="Logotipo">
       </div>
-      <div class="nombre_pagina"> <h1>Biblioteca</h1></div>
+      <div class="nombre_pagina">
+        <h1>Biblioteca</h1>
+      </div>
     </div>
     </div>
 
     <nav>
       <ul>
-          <li><a href="inicio.html" class="dropbtn">Inicio</a></li>
+        <li><a href="inicio.html" class="dropbtn">Inicio</a></li>
 
-          <li class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn">Consultas</a>
-            <div class="dropdown-content">
-                <a href="consultas_autores.html">Autores</a>
-                <a href="consultas_editoriales.html">Editoriales</a>
-                <a href="consultas.html">Libros</a>
-            </div>
-          </li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Consultas</a>
+          <div class="dropdown-content">
+            <a href="consultas_autores.html">Autores</a>
+            <a href="consultas_editoriales.html">Editoriales</a>
+            <a href="consultas.html">Libros</a>
+          </div>
+        </li>
 
-          <li class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn">Prestamos</a>
-            <div class="dropdown-content">
-                <a href="consultas_Prestamos.html">Consulta Prestamos</a>
-                <a href="ingresarPrestamo.html">Ingresar Prestamo</a>
-            </div>
-          </li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Prestamos</a>
+          <div class="dropdown-content">
+            <a href="consultas_Prestamos.html">Consulta Prestamos</a>
+            <a href="ingresarPrestamo.html">Ingresar Prestamo</a>
+          </div>
+        </li>
 
-          <li class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn">Consultas Admin</a>
-            <div class="dropdown-content">
-                <a href="consultas_personas.html">Personas</a>
-                <a href="consultas_cargos.html">Cargos</a>
-            </div>
-          </li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Consultas Admin</a>
+          <div class="dropdown-content">
+            <a href="consultas_personas.html">Personas</a>
+            <a href="consultas_cargos.html">Cargos</a>
+          </div>
+        </li>
 
-          <li class="dropdown">
-              <a href="javascript:void(0)" class="dropbtn">Catalogos</a>
-              <div class="dropdown-content">
-                  <a href="IngresarAutor.html">Ingresar Autor</a>
-                  <a href="IngresarEditorial.html">Ingresar Editorial</a>
-                  <a href="ingresarLibro.html">Ingresar Libro</a>
-                  <a href="ingresarLibroPlu.html">Ingresar Plu Libro</a>
-                  <a href="ingresarPersonas.html">Ingresar Personas</a>
-                  <a href="ingresarCargos.html">Ingresar Cargos</a>
-              </div>
-          </li>
-          <li class="dropdown">
-              <a href="javascript:void(0)" class="dropbtn">Cuenta</a>
-              <div class="dropdown-content">
-                  <a href="ConsultarLogin.html">Ingresar Login</a>
-                  <a href="acercade.html">A Cerca de</a>
-              </div>
-          </li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Catalogos</a>
+          <div class="dropdown-content">
+            <a href="IngresarAutor.html">Ingresar Autor</a>
+            <a href="IngresarEditorial.html">Ingresar Editorial</a>
+            <a href="ingresarLibro.html">Ingresar Libro</a>
+            <a href="ingresarLibroPlu.html">Ingresar Plu Libro</a>
+            <a href="ingresarPersonas.html">Ingresar Personas</a>
+            <a href="ingresarCargos.html">Ingresar Cargos</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Cuenta</a>
+          <div class="dropdown-content">
+            <a href="ConsultarLogin.html">Ingresar Login</a>
+            <a href="acercade.html">A Cerca de</a>
+          </div>
+        </li>
       </ul>
-  </nav>
-   </header>
+    </nav>
+  </header>
 
   <section class="contenedor">
     <section id="main">
       <article id="contenido">
-        <h2>Área de información</h2>
+        <h2>Consultar Autor</h2>
       </article>
     </section>
     <aside>
       <h2>Busqueda</h2><br><br>
-      <form action="">
+      <form name="formCOnsulta" action="">
         <label for="Nombre Libro">Nombre Autor a consultar:</label><br>
         <input type="text" id="des_autor" placeholder="Escribe el nombre del autor">
         <input id="bottomBuscarAutor" type="button" value="Buscar">

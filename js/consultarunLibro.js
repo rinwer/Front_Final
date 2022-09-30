@@ -40,7 +40,6 @@ function getlibro() {
       }
       //convertir objeto del back en objecto json.
       libros = JSON.parse(data);
-      console.log("Llamando a procesar");
       procesarLibros();
     })
     .catch((err) => {
