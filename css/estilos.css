@@ -3,91 +3,120 @@
   padding: 0;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-li {
-  float: left;
-}
-
-li a, .dropbtn {
-  display: inline-block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover, .dropdown:hover .dropbtn {
-  background-color: blue;
-}
-
-li.dropdown {
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {background-color: #f1f1f1;}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
 body {
   background: #e6e6e6;
+	margin:0;
+	font-family:Arial
 }
+
+.topnav {
+	overflow: hidden;
+	background-color: #F08838;
+  }
+  
+  .topnav a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+  }
+  
+  .active {
+	background-color: #F08838;
+	color: white;
+  }
+  
+  .topnav .icon {
+	display: none;
+  }
+  
+  .dropdown {
+	float: left;
+	overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+	font-size: 17px;    
+	border: none;
+	outline: none;
+	color: white;
+	padding: 14px 16px;
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0;
+  }
+  
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+  
+  .dropdown-content a {
+	float: none;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+  }
+  
+  .topnav a:hover, .dropdown:hover .dropbtn {
+	background-color: #555;
+	color: white;
+  }
+  
+  .dropdown-content a:hover {
+	background-color: #ddd;
+	color: black;
+  }
+  
+  .dropdown:hover .dropdown-content {
+	display: block;
+  }
+  
+  @media screen and (max-width: 600px) {
+	.topnav a:not(:first-child), .dropdown .dropbtn {
+	  display: none;
+	}
+	.topnav a.icon {
+	  float: right;
+	  display: block;
+	}
+  }
+  
+  @media screen and (max-width: 600px) {
+	.topnav.responsive {position: relative;}
+	.topnav.responsive .icon {
+	  position: absolute;
+	  right: 0;
+	  top: 0;
+	}
+	.topnav.responsive a {
+	  float: none;
+	  display: block;
+	  text-align: left;
+	}
+	.topnav.responsive .dropdown {float: none;}
+	.topnav.responsive .dropdown-content {position: relative;}
+	.topnav.responsive .dropdown .dropbtn {
+	  display: block;
+	  width: 100%;
+	  text-align: left;
+	}
+  }
 
 header,
 footer {
   background: #1f45fc;
   width: 90%;
   margin: 20px auto;
-}
-
-header nav {
-  background: #fff;
-  overflow: hidden;
-}
-
-header nav ul {
-  list-style-type: none; /*Quitamos los puntos y sangrías*/
-}
-
-header nav ul li {
-  float: left;
-  padding: 10;
-}
-
-header nav ul li a {
-  display: block; /*Con esto el margin funciona para todos los lados*/
-  font-size: 20px;
-  color: black;
-  padding: 10px 20px;
-  text-decoration: none;
-}
-
-header nav ul li a:hover {
-  background: #f8f6f0;
 }
 
 .contenedor {
@@ -167,9 +196,13 @@ form input[type="submit"]:hover {
 /********************************/
 /*Estilos para tabla*/
 /********************************/
+.table_lista {
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-size: 10px;
+}
 
 table {
-  border: 1px solid black;
   border-collapse: collapse;
   font-size: 10px;
 }
@@ -206,7 +239,12 @@ table td:hover {
 }
 .logo
 {
-  display: inline-block;
+  display: -webkit-inline-box;
+}
+
+.logo_responsive{
+  max-width: 100%;
+  height:auto;
 }
 .PortadaInicio
 {

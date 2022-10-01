@@ -5,71 +5,73 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/estilos.css">
   <title>Document</title>
 </head>
 
 <body>
   <header>
-    <div class="div_main">
-      <div class="logo">
-        <img src="Imagenes/LibreriaCaricatura.png" width="189x" height="95px"
-          style="margin-top: 16px; margin-left: 16px;" alt="Logotipo">
+    <div class="div_main logo">
+      <div>
+        <img src="Imagenes/logo.png" class="logo_responsive">
       </div>
       <div class="nombre_pagina">
-        Biblioteca
+        <h1 style="font-size:5vw;">Biblioteca </h1>
       </div>
     </div>
+    
+    <div class="topnav" id="myTopnav">
+      <a href="inicio.html" class="active">Inicio</a>
 
-    <nav>
-      <ul>
-        <li><a href="inicio.html" class="dropbtn">Inicio</a></li>
-
-        <li class="dropdown">
-          <a href="javascript:void(0)" class="dropbtn">Consultas</a>
-          <div class="dropdown-content">
+      <div class="dropdown">
+        <button class="dropbtn">Consultas
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
             <a href="consultas_autores.html">Autores</a>
             <a href="consultas_editoriales.html">Editoriales</a>
             <a href="consultas.html">Libros</a>
-          </div>
-        </li>
+        </div>
+      </div>
 
-        <li class="dropdown">
-          <a href="javascript:void(0)" class="dropbtn">Prestamos</a>
-          <div class="dropdown-content">
-            <a href="consultas_Prestamos.html">Consulta Prestamos</a>
-            <a href="ingresarPrestamo.html">Ingresar Prestamo</a>
-          </div>
-        </li>
+      <div class="dropdown">
+        <button class="dropbtn">Consultas Admin
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="consultas_personas.html">Personas</a>
+          <a href="consultas_cargos.html">Cargos</a>
+        </div>
+      </div>
 
-        <li class="dropdown">
-          <a href="javascript:void(0)" class="dropbtn">Consultas Admin</a>
-          <div class="dropdown-content">
-            <a href="consultas_personas.html">Personas</a>
-            <a href="consultas_cargos.html">Cargos</a>
-          </div>
-        </li>
-
-        <li class="dropdown">
-          <a href="javascript:void(0)" class="dropbtn">Catalogos</a>
-          <div class="dropdown-content">
-            <a href="ingresarAutor.html">Ingresar Autor</a>
-            <a href="ingresarEditorial.html">Ingresar Editorial</a>
+      <div class="dropdown">
+        <button class="dropbtn">Catalogos
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="IngresarAutor.html">Ingresar Autor</a>
+            <a href="IngresarEditorial.html">Ingresar Editorial</a>
             <a href="ingresarLibro.html">Ingresar Libro</a>
             <a href="ingresarLibroPlu.html">Ingresar Plu Libro</a>
             <a href="ingresarPersonas.html">Ingresar Personas</a>
             <a href="ingresarCargos.html">Ingresar Cargos</a>
-          </div>
-        </li>
-        <li class="dropdown">
-          <a href="javascript:void(0)" class="dropbtn">Cuenta</a>
-          <div class="dropdown-content">
-            <a href="consultarLogin.html">Ingresar Login</a>
+            <a href="ModificarCargos.html">Modificar Cargo</a>
+            <a href="RetirarCargos.html">Retirar Cargo</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">Cuenta
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="ConsultarLogin.html">Login</a>
             <a href="acercade.html">A Cerca de</a>
-          </div>
-        </li>
-      </ul>
-    </nav>
+        </div>
+      </div>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="jsOpcionMenu()">&#9776;</a>
+    </div>
 
   </header>
 
@@ -120,3 +122,4 @@
 <script src="js/ingresarAutor.js"></script>
 
 </html>
+<script src="js/generales.js"></script>
