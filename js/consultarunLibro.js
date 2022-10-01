@@ -11,7 +11,7 @@ bottom.addEventListener("click", hizoClick);
 libros = [];
 let bottomBuscar = document.getElementById("bottomBuscarLibro");
 
-//const getlibroUrl = "https://minticgrupo4.herokuapp.com/libros/consultarLibroNombre/";
+//const getlibroUrl ="https://minticgrupo4.herokuapp.com/libros/consultarLibroNombre/";
 let getlibroUrl = "http://127.0.0.1:8000/libros/consultarLibroNombre/";
 
 function clickBuscarLibro() {

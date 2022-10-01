@@ -49,6 +49,7 @@ function crearlibro(data) {
     .then((data) => {
       //se imprime el return del backend donde indica que el libro se ha creado satisfatoriamente.
       console.log(data);
+      alert("Registro ok");
     })
     .catch((err) => {
       console.error("ERROR: ", err.message);

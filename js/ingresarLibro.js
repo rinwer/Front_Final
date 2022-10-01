@@ -57,10 +57,10 @@ function crearlibro(data) {
     body: data,
   })
     .then((response) => {
-      //console.log(response.status);
       //procesar si la promesa tiene codigo 200 y darle manejo con el else.
       if (response.ok) {
         return response.text();
+        console.log("exitoso");
       } else {
         throw new Error(response.status);
       }
