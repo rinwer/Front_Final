@@ -8,8 +8,8 @@ let text = document.getElementById("modificarText");
 bottom.addEventListener("click", hizoClick);
 */
 
-//const crearlibroUrl = "https://minticgrupo4.herokuapp.com/libros/agregarLibro";
-const crearlibroUrl = "http://127.0.0.1:8000//libros/agregarLibro";
+const crearlibroUrl = "https://minticgrupo4.herokuapp.com/libros/agregarLibro";
+//const crearlibroUrl = "http://127.0.0.1:8000//libros/agregarLibro";
 
 function agruparData(event_) {
   event_.preventDefault(); //para evitar que el evento formulario se ejecute como es.

@@ -8,8 +8,9 @@ let text = document.getElementById("modificarText");
 bottom.addEventListener("click", hizoClick);
 */
 
-//const crearlibroUrl = "https://minticgrupo4.herokuapp.com/libros/agregarEditorial";
-const crearlibroUrl = "http://127.0.0.1:8000//libros/agregarEditorial";
+const crearEditorialUrl =
+  "https://minticgrupo4.herokuapp.com/libros/agregarEditorial";
+//const crearEditorialUrl = "http://127.0.0.1:8000//libros/agregarEditorial";
 
 function agruparData(event_) {
   event_.preventDefault(); //para evitar que el evento formulario se ejecute como es.
@@ -24,12 +25,12 @@ function agruparData(event_) {
 
   //convertir objeto js a json
   const dataSend = JSON.stringify(data);
-  crearlibro(dataSend);
+  crearEditorial(dataSend);
 }
 
-function crearlibro(data) {
+function crearEditorial(data) {
   console.log(data);
-  fetch(crearlibroUrl, {
+  fetch(crearEditorialUrl, {
     method: "POST",
     headers: {
       "content-type": "text/json",
