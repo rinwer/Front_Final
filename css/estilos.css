@@ -195,3 +195,33 @@ table td:hover {
   background: #dbdbdb;
   color: black;
 }
+.nombre_pagina
+{
+  color: white;
+  display: inline-block;
+  font-size: 80px;
+  padding-left: 22%;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+.logo
+{
+  display: inline-block;
+}
+.PortadaInicio
+{
+  background-image: url("../Imagenes/LibreriaCaricatura.png");
+  background-repeat: repeat;
+  max-width: 100%;
+  max-height: auto;
+  background-size: contain;
+  opacity: 50%;
+}
+.Texto_Inicio
+{
+  opacity: 100%;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  /* -webkit-text-stroke: 2px black; */
+}
