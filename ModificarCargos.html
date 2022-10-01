@@ -72,6 +72,7 @@
       </div>
       <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="jsOpcionMenu()">&#9776;</a>
     </div>
+
   </header>
 
   <section class="contenedor">
@@ -80,18 +81,43 @@
         <form name="registro" method="POST">
 
           <table width="100%">
-            <h2>EN CONSTRUCCIÓN</h2>
-            <CAPTION>INGRESE USUARIO</CAPTION>
+            <caption>MODIFICAR CARGO</caption>
             <tbody>
+              <!-- ---------------AQUI VAN LOS CAMPOS--------------- -->
               <tr>
-                <td><label for="nombre">Usuario:</label></td>
-                <td><input type="email" id="login" placeholder="correo@dominio"></td>
+                <td><label for="cod_cargo">COD CARGO:</label></td>
+                <td>
+                  <input type="number" id="cod_cargo" placeholder="CODIGO" required>
+                </td>
               </tr>
               <tr>
-                <td><label for="email">Password:</label></td>
-                <td><input type="password" id="password" placeholder="Password"></td>
+                <td><label for="des_cargo">DESCRIPCIÓN CARGO:</label></td>
+                <td>
+                  <input type="text" id="des_cargo" placeholder="Descripcion"
+                    onkeyup="javascript:this.value=this.value.toUpperCase();" required>
+                </td>
+              </tr>
+
               <tr>
-                <td colspan="2"><input id="bottom" type="submit" value="Enviar"></td>
+                <td><label for="cod_estado">CÓDIGO ESTADO:</label></td>
+                <td>
+                  <input type="text" id="cod_estado" placeholder="Código Estado"
+                    onkeyup="javascript:this.value=this.value.toUpperCase();" required>
+                </td>
+              </tr>
+
+              <tr>
+                <td><label for="sw_empleado">Switch Empleado:</label></td>
+                <td>
+                  <input type="text" id="sw_empleado" placeholder="Sw Empleado"
+                    onkeyup="javascript:this.value=this.value.toUpperCase();" required>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="2" aling="center">
+                  <input type="submit" value="Submit">
+                </td>
               </tr>
             </tbody>
           </table>
@@ -101,7 +127,7 @@
 
     <aside>
       <div id="asideImg">
-        <img src="imagenes/Login.png" width="100%">
+        <img src="imagenes/IngresarCargos.png" width="100%">
       </div>
     </aside>
   </section>
@@ -109,8 +135,9 @@
   <footer>
     <p>Mintic 2022 <br> <span>GRUPO 4</span></p>
   </footer>
+  <script src="js/actualizarCargo.js"></script>
+
 </body>
-<script src="js/consultarLogin.js"></script>
 
 </html>
 <script src="js/generales.js"></script>
