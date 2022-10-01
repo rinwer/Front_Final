@@ -48,12 +48,15 @@ function crearlibro(data) {
     //si el codigo es 200 procesamos la promesa.
     .then((data) => {
       //se imprime el return del backend donde indica que el libro se ha creado satisfatoriamente.
-      console.log(data);
-      alert("Registro ok");
+      clearCampos();
     })
     .catch((err) => {
       console.error("ERROR: ", err.message);
     });
 }
-
+function clearCampos() {
+  alert("Registro ok");
+  document.getElementById("cod_editorial").value = "";
+  document.getElementById("des_editorial").value = "";
+}
 document.registro.addEventListener("submit", agruparData);
