@@ -78,18 +78,34 @@
                     <table width="100%">
                         <caption>INGRESAR CARGO</caption>
                         <tbody>
+                            <!-- ---------------AQUI VAN LOS CAMPOS--------------- -->
                             <tr>
-                                <td><label for="cod_cargo_id">COD CARGO:</label></td>
+                                <td><label for="cod_cargo">COD CARGO:</label></td>
                                 <td>
                                     <input type="number" id="cod_cargo" placeholder="CODIGO" required>
                                 </td>
                             </tr>
                             <tr>
-                                <td><label for="des_cargo">Editorial:</label></td>
+                                <td><label for="des_cargo">DESCRIPCIÓN CARGO:</label></td>
                                 <td>
-                                    <input type="text" id="des_cargo" placeholder="Cargo" onkeyup="javascript:this.value=this.value.toUpperCase();" required>
+                                    <input type="text" id="des_cargo" placeholder="Descripcion" onkeyup="javascript:this.value=this.value.toUpperCase();" required>
                                 </td>
                             </tr>
+                            
+                            <tr>
+                                <td><label for="cod_estado">CÓDIGO ESTADO:</label></td>
+                                <td>
+                                    <input type="text" id="cod_estado" placeholder="Código Estado" onkeyup="javascript:this.value=this.value.toUpperCase();" required>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><label for="sw_empleado">Switch Empleado:</label></td>
+                                <td>
+                                    <input type="text" id="sw_empleado" placeholder="Sw Empleado" onkeyup="javascript:this.value=this.value.toUpperCase();" required>
+                                </td>
+                            </tr>
+
                             <tr>
                                 <td colspan="2" aling="center">
                                     <input type="submit" value="Submit">
