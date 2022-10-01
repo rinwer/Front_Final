@@ -11,8 +11,9 @@ bottom.addEventListener("click", hizoClick);
 editoriales = [];
 let bottomBuscar = document.getElementById("bottomBuscarEditorial");
 
-//const getlibroUrl = "https://minticgrupo4.herokuapp.com/libros/consultarLibroNombre/";
-let getEditorialUrl = "http://127.0.0.1:8000/libros/consultarEditorial/";
+const getEditorialUrl =
+  "https://minticgrupo4.herokuapp.com/libros/consultarEditorial/";
+//let getEditorialUrl = "http://127.0.0.1:8000/libros/consultarEditorial/";
 
 function clickBuscarEditorial() {
   console.log("cuando se hace click");
