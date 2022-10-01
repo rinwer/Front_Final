@@ -108,6 +108,12 @@
                 </td>
               </tr>
               <tr>
+                <td><label for="cod_cargo_id">Código Cargo:</label></td>
+                <td>
+                  <input type="text" id="cod_cargo_id" placeholder="Código Cargo" onkeyup="javascript:this.value=this.value.toUpperCase();" required>
+                </td>
+              </tr>
+              <tr>
                 <td><label for="direccion">Direccion:</label></td>
                 <td>
                   <input type="text" id="direccion" placeholder="DIRECCION" onkeyup="javascript:this.value=this.value.toUpperCase();" required>
@@ -117,7 +123,7 @@
               <tr>
                 <td><label for="tel_movil">Celular:</label></td>
                 <td>
-                  <input type="number" id="tel_movil" placeholder="CELULAR" min="1000000000" max="9999999999" required>
+                  <input type="number" id="tel_movil" placeholder="CELULAR" min="1000000" max="9999999999" required>
                 </td>
               </tr>
               <tr>
@@ -135,27 +141,27 @@
               <tr>
                 <td><label for="fec_nacimiento">Fecha Nacimiento:</label></td>
                 <td>
-                  <input type="text" id="fec_nacimiento" placeholder="DD/MM/AAAA" required>
+                  <input type="text" id="fec_nacimiento" placeholder="AAAA-MM-DD" required>
                 </td>
               </tr>
 
               <tr>
                 <td><label for="fec_ingreso">Fecha Ingreso:</label></td>
                 <td>
-                  <input type="text" id="fec_ingreso" value="1" placeholder="DD/MM/AAAA">
+                  <input type="text" id="fec_ingreso" placeholder="AAAA-MM-DD">
                 </td>
               </tr>
 
               <tr>
-                <td><label for="cod_cargo_id">Cod Cargo:</label></td>
+                <td><label for="cod_estado_per_id">Código estado persona:</label></td>
                 <td>
-                  <input type="text" id="cod_cargo_id" value="2" placeholder="CODIGO CARGO">
+                  <input type="text" id="cod_estado_per_id" value="NOR" placeholder="CODIGO CARGO">
                 </td>
               </tr>
               <tr>
                 <td><label for="clave">Clave:</label></td>
                 <td>
-                  <input type="password" id="clave" value="2" placeholder="CLAVE">
+                  <input type="password" id="clave"  placeholder="CLAVE">
                 </td>
               </tr>
 
@@ -180,7 +186,8 @@
   <footer>
     <p>Mintic 2022 <br> <span>GRUPO 4</span></p>
   </footer>
-  <script src="js/ingresarPersonas.js"></script>
+  <!-- <script src="js/ingresarPersonas.js"></script> -->
+  <script src="js/ingresarAcceso.js"></script>
 </body>
 
 </html>

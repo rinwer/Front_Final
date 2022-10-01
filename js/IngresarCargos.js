@@ -47,8 +47,10 @@ function crearEntrada(data) {
       //console.log(response.status);
       //procesar si la promesa tiene codigo 200 y darle manejo con el else.
       if (response.ok) {
+        alert("Datos guardados correctamente");
         return response.text();
       } else {
+        alert("Error al guardar los datos");
         throw new Error(response.status);
       }
     })
