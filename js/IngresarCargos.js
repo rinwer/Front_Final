@@ -8,9 +8,8 @@ let text = document.getElementById("modificarText");
 bottom.addEventListener("click", hizoClick);
 */
 
-// const Url =
-//   "https://minticgrupo4.herokuapp.com/personas/agregarCargo";
-const Url = 'http://127.0.0.1:8000/personas/agregarCargo';
+const Url = "https://minticgrupo4.herokuapp.com/personas/agregarCargo";
+//const Url = 'http://127.0.0.1:8000/personas/agregarCargo';
 
 function agruparData(event_) {
   event_.preventDefault(); //para evitar que el evento formulario se ejecute como es.
@@ -19,7 +18,6 @@ function agruparData(event_) {
   const des_cargo = document.registro.des_cargo.value;
   const cod_estado = document.registro.cod_estado.value;
   const sw_empleado = document.registro.sw_empleado.value;
-  
 
   //Objeto js
   const data = {

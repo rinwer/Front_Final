@@ -1,7 +1,10 @@
 personas = [];
 let bottomBuscar = document.getElementById("bottomBuscarPersona")
+https://minticgrupo4.herokuapp.com/
 
-let getPersonaUrl = "http://127.0.0.1:8000/personas/consultarPersona/";
+
+let getPersonaUrl = "https://minticgrupo4.herokuapp.com/personas/consultarPersona/";
+//let getPersonaUrl = "http://127.0.0.1:8000/personas/consultarPersona/";
 
 function clickBuscarPersona(){
     // console.log("Hola")

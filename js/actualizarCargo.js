@@ -8,9 +8,8 @@ let text = document.getElementById("modificarText");
 bottom.addEventListener("click", hizoClick);
 */
 
-// const Url =
-//   "https://minticgrupo4.herokuapp.com/personas/agregarCargo";
-const Url = 'http://127.0.0.1:8000/personas/modificarCargo/';
+const Url = "https://minticgrupo4.herokuapp.com/personas/modificarCargo";
+//const Url = 'http://127.0.0.1:8000/personas/modificarCargo/';
 
 
 function agruparData(event_) {

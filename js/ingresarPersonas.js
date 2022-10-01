@@ -8,10 +8,8 @@ let text = document.getElementById("modificarText");
 bottom.addEventListener("click", hizoClick);
 */
 
-// const Url =
-//   "https://minticgrupo4.herokuapp.com/personas/agregarCargo";
-const Url = 'http://127.0.0.1:8000/personas/agregarPersona';
-
+const Url = "https://minticgrupo4.herokuapp.com/personas/agregarPersona";
+//const Url = 'http://127.0.0.1:8000/personas/agregarPersona';
 
 function agruparData(event_) {
   event_.preventDefault(); //para evitar que el evento formulario se ejecute como es.
@@ -32,18 +30,18 @@ function agruparData(event_) {
 
   //Objeto js
   const data = {
-    tipo_documento      : tipo_documento,
-    num_documento       : num_documento,
-    nombres             : nombres,
-    apellidos           : apellidos,
-    cod_cargo           : cod_cargo_id,
-    direccion           : direccion,
-    tel_movil           : tel_movil,
-    des_municipio       : des_municipio,
-    email               : email,
-    fec_nacimiento      : fec_nacimiento,
-    fec_ingreso         : fec_ingreso,
-    cod_estado_per      : cod_estado_per_id,
+    tipo_documento: tipo_documento,
+    num_documento: num_documento,
+    nombres: nombres,
+    apellidos: apellidos,
+    cod_cargo: cod_cargo_id,
+    direccion: direccion,
+    tel_movil: tel_movil,
+    des_municipio: des_municipio,
+    email: email,
+    fec_nacimiento: fec_nacimiento,
+    fec_ingreso: fec_ingreso,
+    cod_estado_per: cod_estado_per_id,
   };
   console.log(data);
   //convertir objeto js a json
